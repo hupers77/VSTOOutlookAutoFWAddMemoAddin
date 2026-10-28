@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabMail">
+        <group id="grpAutoForward" label="자동 전달">
+          <button id="btnAutoForwardRules"
+                  label="자동 전달 규칙"
+                  size="large"
+                  imageMso="ForwardMessage"
+                  screentip="자동 전달 규칙 관리"
+                  supertip="제목 조건에 맞는 수신 메일을 지정한 수신자에게 자동 전달하는 규칙을 관리합니다."
+                  onAction="OnOpenRules"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

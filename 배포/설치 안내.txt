@@ -1,0 +1,21 @@
+[Outlook 자동 메일 전달 Add-in 설치 안내]
+
+1. 사전 조건
+   - Windows + 클래식 Outlook (Microsoft 365 / 2016 이상). '새 Outlook'은 지원하지 않습니다.
+   - .NET Framework 4.8, VSTO 런타임 (Office 설치 시 대부분 포함)
+
+2. 설치
+   - 이 '배포' 폴더에서 실행합니다.
+   - Outlook을 종료한 뒤 OutlookAutoForwardAddIn.vsto 를 더블클릭합니다.
+   - '게시자를 확인할 수 없음' 경고가 나오면 [설치]를 선택합니다.
+     (자체 서명 인증서라 표시되는 경고입니다. 설치가 차단되면 IT 담당자에게 문의하세요.)
+   - Outlook을 실행하면 [홈] 탭에 '자동 전달' 그룹이 표시됩니다.
+
+3. 사용
+   - [홈] > 자동 전달 > '자동 전달 규칙'에서 규칙을 추가하고 [저장]합니다.
+   - 규칙은 %AppData%\OutlookAutoForwardAddIn\rules.json 에 PC별로 저장됩니다.
+   - 조건에 맞는 메일이 수신되면 확인 없이 자동 발송됩니다. 처음에는 본인 주소로 테스트하세요.
+   - 기존 '자동 전달 규칙'은 유지 됩니다.
+
+4. 제거
+   - 제어판 > 프로그램 제거 > OutlookAutoForwardAddIn
